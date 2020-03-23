@@ -1,0 +1,154 @@
+.article {
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
+
+.article.sm {
+    position: relative;
+    margin: 15px;
+}
+
+.article::before {
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(50%,transparent),color-stop(50%,#000));
+    background: linear-gradient(-180deg,transparent 50%,#000);
+    background: -webkit-linear-gradient(top,transparent 50%,#000);
+}
+
+.section-img {
+    height: 500px;
+}
+
+.section-img.sm {
+    height: 200px;
+}
+
+.section-img a img {
+    height: 100%;
+}
+
+.section-category {
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 40px;
+    position: absolute;
+    border-radius: 4px;
+    background: rgba(0,0,0,.4);
+}
+
+.section-content {
+    position: absolute;
+    bottom: 26px; 
+    left: 20px; 
+    padding-right: 38px; 
+    padding-left: 18px;
+}
+
+.section-content.sm {
+    position: absolute;
+    bottom: 15px; 
+    left: 0px; 
+    padding-right: 18px; 
+    padding-left: 18px;
+}
+
+.section-content h3 {
+    padding-right: 112px;
+    color: #262626;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .25px;
+}
+
+.section-content h5 {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: .25px;
+}
+
+.section-content h3 a,
+.section-content h5 a,
+.section-content ul li a {
+    color: #fff;
+}
+
+.section-content h5 a {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .section-img, .section-img a img {
+        height: auto !important;
+    }
+
+    .section-category {
+        height: 35px;
+        font-size: 13px;
+        line-height: 35px;
+    }
+
+    .section-content {
+        bottom: 15px; 
+        left: 15px; 
+        padding-right: 15px; 
+        padding-left: 0px;
+    }
+
+    .section-content h3 {
+        padding: 0px;
+        font-size: 17px;
+        line-height: 1.3;
+        margin-bottom: .1rem;
+    }
+
+    .section-content ul li a {
+        font-size: 14px;
+    }
+}
+
+ul.sharelink li {
+    font-size: 20px;
+}
+
+ul.sharelink li:nth-last-child(1), ul.sharelink li:nth-last-child(2) {
+    color: #c5c5c5;
+    cursor: pointer;
+}
+
+ul.sharelink li:nth-last-child(2) {
+    position: relative;
+}
+
+ul.sharelink li:nth-last-child(2) div {
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    line-height: 23px;
+    top: 1px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+ul.sharelink li:nth-last-child(2):hover div {
+    visibility: visible;
+    opacity: 1;
+}

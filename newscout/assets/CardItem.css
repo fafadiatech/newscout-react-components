@@ -1,0 +1,172 @@
+.card-post {
+	border: none;
+	transition: 0.3s;
+	box-shadow: 0 0 5px rgba(0,0,0,.05);
+}
+
+.card-post:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+
+.card-post a img {
+	width: 100%;
+}
+
+.card-post .card-body {
+	padding: 30px;
+}
+
+.card-post .card-body .card-title {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	color: #262626;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    overflow: hidden;
+}
+
+.card-post .card-body p.card-text:not(.card-desc) a {
+	font-size: 15px;
+	color: #7f7f7f;
+	font-weight: 600;
+	text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-post .card-body p.card-desc a {
+	height: 70px;
+	font-size: 15px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-post .card-body p.card-desc a:hover {
+	color: inherit;
+}
+
+/*  HorizontalCardItem  css */
+
+.article-post {
+	height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+
+.card-container-detail,
+.card-container {
+	box-shadow: 0px 0px 20px #e8e8e8;
+}
+
+.card-container {
+	border-radius: 20px;
+    margin: 15px;
+    width: 330px !important;
+	height: 200px;
+}
+
+.card-container-detail .card,
+.card-container .card {
+	border-radius: 20px;
+	border: none;
+}
+
+.card-container .card img {
+	width: 100%;
+	height: 100%;
+	min-height: 150px;
+	max-height: 150px;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-container-detail .card .card-title,
+.card-container .card .card-title {
+	font-size: 17px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-container-detail .card-text .card-muted,
+.card-container .card .card-text .card-muted {
+	font-size: 70%;
+    color: #8a8c90;
+}
+
+.card-container-detail .card .card-desc,
+.card-container .card .card-desc {
+	font-size: 14px;
+	color: #8a8c90;
+	text-align: justify;
+}
+
+.card-container .card .card-desc {
+	height: 85px;
+	overflow: hidden;
+}
+
+@media (max-width: 380px) {
+	.article-post {
+		height: auto;
+	}
+
+	.slick-slide .card-container {
+		margin: 0px auto 40px auto;
+    	width: 250px;
+	}
+
+    .card-container {
+    	margin: 0px 0px 40px 4px;
+    	width: 321px;
+	}
+
+	.slick-slide .card-container {
+	    border-radius: 20px;
+	    margin: 0px;
+	    height: 171px;
+	    width: 100% !important;
+	}
+
+	.slick-slide .card-container .view-all {
+		font-size: 25px;
+	    text-align: center;
+	    vertical-align: middle;
+	    line-height: 155px;
+	    box-shadow: 0px 0px 20px #e8e8e8;
+    	margin: 15px;
+	}
+}
+
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+	.article-post {
+		height: auto;
+	}
+
+	.card-container {
+		width: 100%;
+		max-width: 290px;
+		margin: 0 auto 20px auto;
+	}
+}
+
+.adlink {
+	min-height: 248px;
+}
+
+.adlink ul li {
+	font-size: 13px;
+    font-weight: 600;
+    color: #de403c;
+    cursor: pointer;
+}
