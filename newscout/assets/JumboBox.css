@@ -40,3 +40,15 @@
     font-size: 15px;
     white-space: pre-wrap;
 }
+
+@media (max-width: 380px) {
+    .article-detail .card-body {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+    .article-detail .card-body {
+        padding: 15px;
+    }  
+}

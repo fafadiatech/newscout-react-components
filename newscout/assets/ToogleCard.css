@@ -1,7 +1,6 @@
 .card.toogle-card {
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,.05);
-  border: none !important;
   transition: 0.3s;
   padding: 15px;
 }

@@ -1,147 +1,167 @@
 .navbar-expand-md .navbar-nav .nav-link {
-    background-color: transparent;
-    color: #262626;
+  background-color: transparent;
+  color: #262626;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active,
 .custom-toggler.navbar-toggler {
-    color: #fc0a05;
+  color: #fc0a05;
+}
+
+.custom-toggler.navbar-toggler {
+  padding: 0px;
+  font-size: 16px;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,5,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,5,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .menu svg {
-    width: 17px;
-    height: 17px;
-    vertical-align: inherit;
-    color: #f5f7fb;
+  width: 17px;
+  height: 17px;
+  vertical-align: inherit;
+  color: #f5f7fb;
 }
 
 .menu {
-    background: #F60A0A;
-    background-image: linear-gradient(to top left, #F60A0A, #D08719);
-    border-radius: 100px;
-    height: 40px;
-    line-height: 40px;
-    color: #f5f7fb;
-    font-family: Arial;
-    width: 40px;
-    font-size: 30px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 2px 2px 15px #d86817;
+  background: #F60A0A;
+  background-image: linear-gradient(to top left, #F60A0A, #D08719);
+  border-radius: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #f5f7fb;
+  font-family: Arial;
+  width: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 2px 2px 15px #d86817;
 }
 
 .closebox {
-    border: 2px solid #fff4e6;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    margin: 25px;
-    position: absolute;
-    right: 0;
-    line-height: 50px;
-    text-align: center;
-    color: #fff4e6;
-    opacity: .6;
-    cursor: pointer;
-    z-index: 1501;
+  border: 2px solid #fff4e6;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  margin: 25px;
+  position: absolute;
+  right: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #fff4e6;
+  opacity: .6;
+  cursor: pointer;
+  z-index: 1501;
 }
 
 .search-container {
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 1500;
-    position: fixed;
-    background: #F60A0A;
-    background-image: linear-gradient(to top left, #F60A0A, #D08719);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1500;
+  position: fixed;
+  background: #F60A0A;
+  background-image: linear-gradient(to top left, #F60A0A, #D08719);
 }
 
 .search-container .search-box {
-    margin-top: 40%;
+  margin-top: 40%;
 }
 
 .search-box h1 {
-    color: #fff4e6; 
-    font-weight: 700;
-    font-size: 56px;
-    letter-spacing: 1px;
-    opacity: .6;
+  color: #fff4e6; 
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 1px;
+  opacity: .6;
 }
 
 .search-container input[type="text"] {
-    color: #fff4e6;
-    border-radius: 0px;
-    border-color: #fff4e6;
-    background: transparent;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    font-size: 25px;
-    opacity: .6;
+  color: #fff4e6;
+  border-radius: 0px;
+  border-color: #fff4e6;
+  background: transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  font-size: 25px;
+  opacity: .6;
 }
 
 .search-container input[type="text"]:active,
 .search-container input[type="text"]:focus {
-    outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
 }
 
 .sidebar-btn {
-    color: #e02c26;
-    cursor: pointer;
+  color: #f04138;
+  cursor: pointer;
+}
+
+.toogler-switch {
+  display: none;
 }
 
 @media (max-width: 380px) {
-    .search-container {
-        padding: 15px;
-    }
-    nav .navbar-brand {
-        margin-left: 0px;
-    }
-    .search-box {
-        margin: 10px 0px;
-    }
+  .search-container {
+    padding: 15px;
+  }
+  nav .navbar-brand {
+    margin-left: 0px;
+  }
+  .search-box {
+    margin: 10px 0px;
+  }
 }
 
 @media only screen and (min-width: 381px) and (max-width: 767px) {
-    .search-container {
-        padding: 15px;
-    }
-    nav .navbar-brand {
-        margin-left: 0px;
-    }
+  .search-container {
+    padding: 15px;
+  }
+  nav .navbar-brand {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px){
+  .toogler-switch {
+    display: block;
+  }
+  .login.dropdown-toggle.nav-link,
+  .login.nav-link {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .menu-icons {
-    width: 18px;
-    height: 18px;
-    margin-top: -3px;
+  width: 18px;
+  height: 18px;
+  margin-top: -3px;
 }
 
 .search-box .form-control:focus {
-    outline: none;
-    border: 1px solid #ddd;
-    box-shadow: none;
+  outline: none;
+  border: 1px solid #ddd;
+  box-shadow: none;
 }
 
 .search-box .input-group-append {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .login {
-    color: #262626;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
+  color: #262626;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*   toogle-switch   */
@@ -184,7 +204,8 @@
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked + .slider,
+.checked-switch {
   background-color: #2196F3;
 }
 
@@ -192,7 +213,8 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked + .slider:before,
+.checked-switch {
   -webkit-transform: translateX(13px);
   -ms-transform: translateX(13px);
   transform: translateX(13px);
@@ -204,4 +226,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.login.dropdown-item svg {
+  vertical-align: middle;
+}
+
+.search-box .rbt-menu > li a {
+  color: #262626;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
 }

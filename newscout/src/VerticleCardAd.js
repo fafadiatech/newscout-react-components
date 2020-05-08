@@ -5,22 +5,20 @@ import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 
 export class VerticleCardAd extends React.Component {
 
-	render(){
+	render() {
 		const { id, image, description, source_url } = this.props;
-		return(
+		return (
 			<Card className="card-post">
 				<a href={`${source_url}`}><img src={image} alt={id} className="img-fluid" /></a>
 				<CardBody className="adlink">
 					<CardText className="card-desc"><a href={`${source_url}`} target="_blank">{description}</a></CardText>
 					<div className="clearfix">
 						<div className="float-left"></div>
-						<div className="float-right">
-							<ul className="list-inline m-0">
-								<li className="list-inline-item">
-									<FontAwesomeIcon icon={faExternalLinkSquareAlt} /> sponsored
+						<ul className="list-inline m-0">
+							<li className="list-inline-item">
+								<FontAwesomeIcon icon={faExternalLinkSquareAlt} /> sponsored
 								</li>
-							</ul>
-						</div>
+						</ul>
 					</div>
 				</CardBody>
 			</Card>

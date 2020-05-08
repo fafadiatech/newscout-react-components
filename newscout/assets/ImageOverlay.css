@@ -85,6 +85,7 @@
     color: #fff;
 }
 
+.section-content h3,
 .section-content h5 a {
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -124,7 +125,7 @@
 }
 
 ul.sharelink li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 ul.sharelink li:nth-last-child(1), ul.sharelink li:nth-last-child(2) {

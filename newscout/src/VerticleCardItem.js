@@ -11,9 +11,9 @@ export class VerticleCardItem extends React.Component {
 	}
 
 	render() {
-
 		const { id, image, title, description, uploaded_by, source_url, category, slug_url, hash_tags, uploaded_on, is_loggedin, bookmark_ids, base_url } = this.props;
-		let final_url = base_url + slug_url
+		let final_url = base_url + slug_url;
+		let bookmark_index = bookmark_ids.findIndex(x => x.id === id);
 
 		return (
 			<Card className="card-post">
@@ -35,20 +35,20 @@ export class VerticleCardItem extends React.Component {
 							<ul className="list-inline m-0 sharelink">
 								<li className="list-inline-item">
 									<div>
-										<FacebookShareButton url={final_url} quote={title}>
+										<FacebookShareButton url={final_url} quote={title} image={image}>
 											<FacebookIcon size={20} round />
 										</FacebookShareButton>&nbsp;
-										<TwitterShareButton url={final_url} quote={title}>
+										<TwitterShareButton url={final_url} quote={title} image={image}>
 											<TwitterIcon size={20} round />
 										</TwitterShareButton>&nbsp;
-										<WhatsappShareButton url={final_url} quote={title}>
+										<WhatsappShareButton url={final_url} quote={title} image={image}>
 											<WhatsappIcon size={20} round />
 										</WhatsappShareButton>
 									</div>
 									<FontAwesomeIcon icon={faShareAlt} />
 								</li>
 								<li className="list-inline-item">
-									<FontAwesomeIcon icon={faBookmark} onClick={this.getArticleId} className={bookmark_ids.indexOf(id) > -1 ? 'bookmarked' : ''} />
+									<FontAwesomeIcon icon={faBookmark} onClick={this.getArticleId} className={`${bookmark_index > -1 ? 'bookmarked' : ''} product-${id}`} />
 								</li>
 							</ul>
 						</div>

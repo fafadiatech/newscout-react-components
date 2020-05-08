@@ -1,7 +1,7 @@
 .sidebar {
-    top: 76px;
+    top: 66px;
 	opacity: 1;
-    position: sticky;
+    position: fixed;
 	background: white;
 	visibility: visible;
     height: 100vh;
@@ -29,7 +29,11 @@
 	.sidebar {
 		display: none !important;
 	}
-
+	
+	.main-content.offset-lg-2 {
+		margin-left: 0 !important;
+	}
+	
 	.main-content.col-lg-10 {
 		flex: 0 0 100% !important;
 	    max-width: 100% !important;
@@ -57,4 +61,8 @@
 .sidebar.col-lg-2 {
 	flex: 0 0 13.666667%;
     max-width: 13.666667%;
+}
+
+.main-content.offset-lg-2 {
+	margin-left: 13.666667%;
 }

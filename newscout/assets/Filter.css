@@ -1,37 +1,21 @@
-/*.search {
-	font-size: 28px;
-	color: #f0442c;
-}*/
-
 .filter {
 	font-weight: 600;
     color: #262626;
     font-size: 15px;
-    line-height: 43px;
+    line-height: 30px;
     text-transform: uppercase;
-    /*margin-right: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    text-align: center;
-    line-height: 55px;
-    background: #F60A0A;
-    background-image: linear-gradient(to top left, #F60A0A, #D08719);
-    color: #fff;
-    box-shadow: 2px 2px 15px #d86817;
-    font-size: 18px;*/
 }
 
 .filter-container {
     right: 0;
-    top: 77px;
-    width: 325px;
+    top: 67px;
+    width: 260px;
     z-index: 1500;
     padding: 25px;
     overflow: auto;
     position: fixed;
     background: #FFF;
-    height: calc(100vh - 77px);
+    height: calc(100vh - 67px);
     border-left: 1px solid #eee;
 }
 
@@ -56,14 +40,6 @@
 	.filter-container {
 		width: 80% !important;
 	}
-
-	/*.filter {
-		margin-right: 20px;
-		width: 36px;
-		height: 36px;
-		line-height: 36px;
-		font-size: 14px;
-	}*/
 }
 
 @media only screen and (min-width: 381px) and (max-width: 767px) {
@@ -74,14 +50,6 @@
 	.filter-container {
 		width: 80% !important;
 	}
-
-	/*.filter {
-		margin-right: 20px !important;
-		width: 36px !important;
-		height: 36px !important;
-		line-height: 36px !important;
-		font-size: 14px !important;
-	}*/
 }
 
 .closefilter, .filter {

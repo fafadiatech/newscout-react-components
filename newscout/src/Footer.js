@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import { Search } from 'newscout';
 
@@ -18,12 +19,15 @@ export class Footer extends React.Component {
 		return(
 			<footer className="footer-area py-4">
 				<div className="container">
-					<div className="clearfix">
-						<div className="float-left">
+					<div className="row">
+						<div className="col-lg-5">
 							<p className="m-0">&copy; Copyright {current_year}, All Rights Reserved by <a href="/">Newscout</a></p>
 						</div>
-						<div className="float-right">
-							<ul className="list-inline m-0">
+						<div className="col-lg-3">
+							<p className="m-0">Made with <FontAwesomeIcon icon={faHeart} /> by <a href="https://www.fafadiatech.com/" target="_blank">Fafadia Tech</a></p>
+						</div>
+						<div className="col-lg-4">
+							<ul className="list-inline m-0 text-right">
 								<li className="list-inline-item">
 									<a href={this.props.privacyurl}>Privacy Policy</a>
 								</li>
